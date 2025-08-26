@@ -15,25 +15,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 
 </head>
-<body class="max-w-[1920px] bg-[#F5FFF6] h-[100vh]">
+<body class="max-w-[1920px]  ">
     <!-- nav ber section-->
-     <nav class="bg-white h-[110px] flex justify-between p-15 items-center">
-        <div class="flex items-center gap-2.5  p-5">
+     <nav class="bg-white h-[110px] flex justify-between py-15 items-center w-11/12 mx-auto  ">
+        <div class="flex items-center gap-2.5  py-5">
             <div><img src="./assets/logo.png" alt="" class="w-[49px]"></div>
-            <div class="text-[#006747] font-bold text-[24px]">
+            <div class="text-[#006747] font-bold md:text-[24px]">
                 <h1 >Emergency </h1>
                 <h1>Service</h1>
             </div>
         
         </div>
         
-             <div class="flex gap-5">
-                <button class="flex items-center  px-9 gap-2.5 bg-[#41ff6b1a] rounded-[50px] "><span class="text-[#000000] font-bold ">0</span><img src="./assets/heart.png" alt="" class="w-7.5"> </button>
+             <div class="flex  gap-2 md:gap-5">
+                <button class="flex items-center px-3 gap-1.5
+                rounded-[20px] md:px-9 md:gap-2.5 bg-[#41ff6b1a] md:rounded-[50px] "><span class="text-[#000000] font-bold ">0</span><img src="./assets/heart.png" alt="" class="w-7.5"> </button>
 
-             <button class="flex items-center   px-5 gap-2.5 bg-[#41ff6b1a] rounded-[50px] "><span class="text-[#000000] font-bold">100</span><img src="./assets/coin.png" alt="" class="w-7.5"> </button>
+             <button class="flex items-center px-3 gap-1.5
+                rounded-[20px] md:px-9 md:gap-2.5 bg-[#41ff6b1a] md:rounded-[50px]  "><span class="text-[#000000] font-bold">100</span><img src="./assets/coin.png" alt="" class="w-7.5"> </button>
 
              <div>
-                <button class="btn  bg-[#00A63E] text-white flex  py-7 px-9 gap-2.5 rounded-[50px]"><span>0</span> Copy</button>
+                <button class="btn  bg-[#00A63E] text-white flex  px-3 gap-1.5 rounded-[20px] md:py-7 md:px-9 md:gap-2.5 md:rounded-[50px]"><span>0</span> Copy</button>
              </div>
 
              </div>
@@ -53,9 +55,158 @@
       </div>
 
       <!-- card section -->
-       
+      <div class="bg-[#F5FFF6]">
+         <section class="w-11/12 mx-auto grid grid-cols-12 gap-7.5 ">
+        <div class=" col-span-9 ">
+            <div class="grid grid-cols-3 gap-7 mt-12">
+                <!-- card-1 -->
+        <div class="card card-dash bg-base-100 shadow p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/emergency.png" alt="" class="max-w-[60px]  p-3.5 bg-[#FFE3E2] rounded-[16px] ml-0">
 
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">National Emergency Number</h2>
+    <p class="text-[#5C5C5C]">National Emergency</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">999</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">All</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+       </div>
 
+  <!-- card-2 -->
+  <div class="card card-dash bg-base-100 shadow    p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/police.png" alt="" class="max-w-[60px]  p-3.5 bg-[#DFEFFF] rounded-[16px] ml-0">
+
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">Police Helpline Number</h2>
+    <p class="text-[#5C5C5C]">Police</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">999</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">Police</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+  </div>
+
+  <!--card-3  -->
+  <div class="card card-dash bg-base-100 shadow   p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/fire-service.png" alt="" class="max-w-[60px]  p-3.5 bg-[#FFE3E2] rounded-[16px] ml-0">
+
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">Fire Service Number</h2>
+    <p class="text-[#5C5C5C]">Fire Service</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">999</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">Fire</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+  </div>
+
+  <!-- card-4 -->
+  <div class="card card-dash bg-base-100 shadow    p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/ambulance.png" alt="" class="max-w-[60px]  p-3.5 bg-[#FFE3E2] rounded-[16px] ml-0">
+
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">Ambulance Service</h2>
+    <p class="text-[#5C5C5C]">Ambulance</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">1994-999999</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">Health</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+  </div>
+
+  <!--card-5  -->
+
+  <div class="card card-dash bg-base-100 shadow    p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/emergency.png" alt="" class="max-w-[60px]  p-3.5 bg-[#FFE3E2] rounded-[16px] ml-0">
+
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">Women & Child Helpline</h2>
+    <p class="text-[#5C5C5C]">Women & Child Helpline</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">109</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">Help</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+  </div>
+  <!--card-6  -->
+
+  <div class="card card-dash bg-base-100 shadow    p-8">
+  <div class="flex justify-between items-center">
+    
+        <img src="./assets/emergency.png" alt="" class="max-w-[60px]  p-3.5 bg-[#FFE3E2] rounded-[16px] ml-0">
+
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <h2 class="font-bold text-[22px] text-[#111111]">Anti-Corruption Helpline</h2>
+    <p class="text-[#5C5C5C]">Anti-Corruption Helpline</p>
+    <div class="py-4">
+        <h4 class="text-[#111111] font-bold text-2xl">106</h4>
+        <button class="btn text-[#5C5C5C]  py-1.5 px-4 rounded-[50px]">Govt</button>
+    </div>
+     
+    <div class="card-actions flex justify-between gap-2">
+      <button class="btn  flex-1 bg-white rounded-[8px] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn  flex-1 bg-[#00A63E] rounded-[8px] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+    
+   </div>
+            </div>
+
+    </div>
+    <!-- call history -->
+        <div class="col-span-3 mt-12 bg-white rounded-[12px] p-6 shadow">
+            <div class="flex justify-between items-center mb-4">
+                <h2><i class="fa-regular fa-clock"></i> Call History</h2>
+                <button class="btn  bg-[#00A63E] text-white flex  py-6 px-9 gap-2.5 rounded-[50px]">Clear</button>
+            </div>
+            <div class="bg-[#FAFAFA] rounded-lg h-10">
+
+            </div>
+            
+        </div>
+       </section>
+      </div>
 
 
 
@@ -64,5 +215,7 @@
 
 
     <!-- js relate style -->
+
+
 </body>
 </html>
