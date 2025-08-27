@@ -15,10 +15,14 @@ function getValue (id){
     const availableBalance = document.getElementById('coin').innerText = value
     return availableBalance
 }
+ function setInnerTestOfHeart(value){
+    const availableBalance = document.getElementById('heart').innerText = value
+    return availableBalance
+}
 
 
 
-
+// call button style-----------------------
 
 const callButtons = document.querySelectorAll('.btn-call');
 
@@ -62,7 +66,21 @@ for (let button of callButtons) {
 
 }
 
-// copy related style
+// heart count ----------------------
+let heartCount = 0;
+const heartButton = document.getElementsByClassName('heart-icon')
+for (let button of heartButton) {
+  button.addEventListener('click', function () {
+    const card = button.closest('.card');
+    
+    heartCount++;
+    const heartNumber = card.getElementsByClassName('heart').innerText = heartCount
+    setInnerTestOfHeart(heartNumber)
+    
+  })
+}
+
+// copy related style-------------------------
 let copyCount = 0;
 const copyButtons = document.querySelectorAll('.btn-copy');
 
