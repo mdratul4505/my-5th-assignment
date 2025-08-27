@@ -1,4 +1,4 @@
-let callHistory = []
+let callHistoryArray = []
 
 function getElementNumber (id){
     const coin = parseInt(document.getElementById(id).innerText)
@@ -50,17 +50,34 @@ for (let button of callButtons) {
 
     button.style.background = "#00A63E";
     button.style.color = "white";
-    
-    
-    
 
     const data = {
         name : service,
         number: serviceNumber,
         date : new Date().toLocaleTimeString()
     }
-    console.log(data)
-    callHistory.push(data)
+    
+    callHistoryArray.push(data)
+    
+    
+    const callHistory = document.getElementById('call-history');
+    callHistory.innerHTML = ""
+    for(const data of callHistoryArray){
+      const div = document.createElement('div')
+      div.innerHTML = `
+      <div  class="bg-[#FAFAFA] rounded-lg flex justify-between items-center p-4 mb-2">
+              <div>
+                <h1>${data.name}</h1>
+                <p>${data.number}</p>
+              </div>
+              <div> ${data.date}</div>
+
+            </div>
+      `
+      callHistory.appendChild(div)
+    }
+
+    
   });
   
 
@@ -99,6 +116,8 @@ for (let button of copyButtons) {
    
   });
 }
+
+
 
 
 
