@@ -43,13 +43,11 @@ for (let button of callButtons) {
     const totalCoin = coin - 20 
     setInnerTest(totalCoin);
 
-    button.style.background = "white";
-    button.style.color = "#00A63E";
+    
 
     alert('📞 Calling ' + serviceName + ' ' + serviceNumber + '...');
 
-    button.style.background = "#00A63E";
-    button.style.color = "white";
+    
 
     const data = {
         name : service,
