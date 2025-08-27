@@ -46,7 +46,7 @@ for (let button of callButtons) {
     button.style.background = "white";
     button.style.color = "#00A63E";
 
-    alert('📞 Call ' + serviceName + ' ' + serviceNumber + '...');
+    alert('📞 Calling ' + serviceName + ' ' + serviceNumber + '...');
 
     button.style.background = "#00A63E";
     button.style.color = "white";
@@ -117,7 +117,13 @@ for (let button of copyButtons) {
   });
 }
 
-
+// history clear section
+document.getElementById('btn-clear')
+.addEventListener('click', function(){
+  const callHistoryDiv = document.getElementById('call-history')
+  callHistoryDiv.innerHTML = ''
+  callHistoryArray = []; 
+})
 
 
 
